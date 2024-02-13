@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* shared style */
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.textPrimary {
+    color: #FD6E0A;
+}
+
+/* navbar style */
+header {
+    background-color: #FFF8F3;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    text-align: center;
+}
+
+.navLeft {
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+}
+.navRight>ul{
+    display: flex;
+}
+.navRight li{
+    list-style: none;
+}
