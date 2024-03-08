@@ -57,13 +57,14 @@
             </div>
           </div>
     </header>
-    <main class="container mx-auto">
-        <section class="products space-y-6 my-5">
+    <main class="sm:container mx-auto lg:container lg:mx-auto">
+        <!-- products section -->
+        <section class="products space-y-6 my-32 mx-auto">
             <div class="products_content text-center w-9/12 mx-auto space-y-4">
                 <h1 class="text-5xl font-extrabold text-h1_color">Our Featured Products</h1>
                 <p class="font-medium text-sm text-text_color">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
             </div>
-            <div class="products_card flex gap-3 flex-col lg:flex-row lg:gap-6 justify-center">
+            <div class="products_card grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-3 lg:grid-cols-4 lg:gap-6 justify-center">
                 <!-- card 1 -->
                 <div class="card shadow-xl bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
                     <figure class="px-10 pt-10">
@@ -105,6 +106,31 @@
                     </div>
                 </div>
                 
+            </div>
+        </section>
+        <!-- great tea fresh tea section -->
+        <section class="my-32 mx-auto flex flex-col gap-6 lg:flex-row lg:gap-12">
+            <div class="tea_img flex-1 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+                <div class="bg-gradient-to-r from-red-100 to-amber-100 rounded-lg h-32">
+
+                </div>
+                <div class=" bg-[#E6A6231A] row-span-2 rounded-lg flex items-center justify-center">
+                    <img src="images/fresh-1.png" alt="">
+                </div>
+                <div class="bg-[#5746391A] row-span-2 flex items-center rounded-lg justify-center">
+                    <img src="images/fresh-2.png" alt="">
+                </div>
+                <div class="bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF00] rounded-lg h-32">
+
+                </div>
+            </div>
+            <div class="tea_text space-y-4 flex-1">
+                <h1 class="text-5xl font-extrabold text-h1_color">Great Tea, Freshly Presented</h1>
+                <p class="font-medium text-sm text-text_color">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                <h3 class="text-3xl font-extrabold text-h1_color">Unique Taste</h3>
+                <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                <h3 class="text-3xl font-extrabold text-h1_color">Premium Quality</h3>
+                <p>Premium Quality that makes tea more elegant and more durable when you use it.</p>
             </div>
         </section>
     </main>
