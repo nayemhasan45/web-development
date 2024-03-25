@@ -10,5 +10,5 @@ function password(pass){
     }
 }
 
-const newPass=password({ name: "maisha", birthYear: 2002 });
+const newPass=password({ name: "rahat", birthYear: 2002, siteName: "Facebook" });
 console.log(newPass);
