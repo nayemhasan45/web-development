@@ -25,16 +25,20 @@
                           <h2 class="card-title">Triangle</h2>
                           <p>Area (A) = 0.5 * b * h</p>
                           <div class="flex gap-2">
-                            <input placeholder="b" class="bg-[#F1F1F1] w-24" type="number">
+                            <input placeholder="b" id="tInputB" class="bg-[#F1F1F1] w-24" type="number">
                             <p>cm</p>
-                            <input placeholder="h" class="bg-[#F1F1F1] w-24" type="number">
+                            <input placeholder="h" id="tInputH" class="bg-[#F1F1F1] w-24" type="number">
                             <p>cm</p>
                           </div>
                           <div class="card-actions">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button id="tBtn" class="btn btn-primary">Calculate</button>
+                          </div>
+                          <div>
+                            <p>Triangle Area : <span id="areaAns"></span> cm <sup>2</sup></p>
                           </div>
                         </div>
                     </div>
+                    
                     <!-- card 2-->
                     <div class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
@@ -44,9 +48,9 @@
                           <h2 class="card-title">rectangle</h2>
                           <p>Area (A) = w * l</p>
                           <div class="flex gap-2">
-                            <input placeholder="w" class="bg-[#F1F1F1] w-24" type="text">
+                            <input id="rInputW" placeholder="w" class="bg-[#F1F1F1] w-24" type="text">
                             <p>cm</p>
-                            <input placeholder="l" class="bg-[#F1F1F1] w-24" type="text">
+                            <input id="rInputL" placeholder="l" class="bg-[#F1F1F1] w-24" type="text">
                             <p>cm</p>
                           </div>
                           <div class="card-actions">
@@ -137,5 +141,8 @@
             </div>
         </section>
     </main>
+
+    <script src="script/triangle.js"></script>
+    <script src="script/rectangle.js"></script>
 </body>
 </html>
