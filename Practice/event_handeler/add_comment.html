@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="commentDiv">
+        <h1>js comment</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore in itaque magnam similique ut fugit quia
+            aliquam unde. Commodi omnis voluptas quis dolor! Dolor dicta qui ratione, laboriosam iste cupiditate
+            voluptas in ipsum officiis eius quisquam mollitia obcaecati nam consectetur quo! Nam sint nobis dolorem,
+            doloribus iusto beatae rem quibusdam.</p>
+        <p>Eos mollitia amet saepe. Assumenda nesciunt sequi illo. Velit neque at non qui necessitatibus impedit beatae
+            illum, voluptate aperiam ea provident distinctio aut facere debitis officiis aspernatur, sunt nemo? Quod
+            amet hic iste officia, pariatur cupiditate iure atque ut beatae unde repellat reiciendis rerum animi
+            suscipit doloremque autem incidunt error.</p>
+        <p>Dolorem aperiam praesentium repellat corporis tempora illo, laboriosam minima pariatur officia ab nesciunt
+            veritatis distinctio doloremque quasi eveniet quis odit velit dolor eius corrupti. Delectus temporibus enim
+            corrupti, molestiae praesentium rem, eum eveniet aliquam excepturi illo, magnam adipisci reprehenderit omnis
+            tenetur quisquam labore tempore. Quam optio sapiente explicabo ratione quisquam.</p>
+    </div>
+    <form>
+        <textarea name="" id="commentArea" cols="60" rows="5"></textarea>
+        <br>
+        <br>
+    </form>
+    <button id="addMe">Add Comment</button>
+
+    <script>
+        document.getElementById('addMe').addEventListener('click',function(){
+            const getCommnet = document.getElementById('commentArea');
+            const getValue = getCommnet.value;
+            const getPDiv= document.getElementById('commentDiv');
+            const p = document.createElement('p');
+            p.innerText= getValue;
+            getPDiv.appendChild(p);
+            getCommnet.value='';
+        })
+    </script>
+</body>
+
+</html>
