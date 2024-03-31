@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even handeler</title>
+</head>
+<body>
+    <h1>js event handel</h1>
+    <p id="text">this is default text</p>
+    <input type="text" name="" id="inputForm"><br><br>
+    <button onclick="changeText()">Change Text</button>
+    <br><br>
+    <button id="secBtn">change text by event listener</button>
+
+    <script>
+        function changeText(){
+            const getText = document.getElementById('text');
+            const getFrom = document.getElementById('inputForm');
+            const formText = getFrom.value;
+            getText.innerText=formText;
+            getFrom.value='';
+        }
+        // option 2
+        document.getElementById('secBtn').addEventListener('click',function(){
+            const getText = document.getElementById('text');
+            getText.innerText='change from event listener';
+        })
+    </script>
+</body>
+</html>
