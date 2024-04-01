@@ -4,5 +4,5 @@ document.getElementById('tBtn').addEventListener('click',function(){
     const base = parseFloat(baseValue);
     const height = parseFloat(heightValue);
     const area = 0.5*base*height;
-    document.getElementById('areaAns').innerText=area;
+    document.getElementById('tAreaAns').innerText=area;
 })
