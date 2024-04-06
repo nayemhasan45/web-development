@@ -1,0 +1,33 @@
+.header,.nav,.main,.sidebar,.advertise,.footer{
+    background-color: yellowgreen;
+    border: 2px solid tomato;
+    border-radius: 5px;
+}
+.header{
+    grid-area: head;
+}
+.nav{
+    grid-area: nav;
+}
+.main{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: bar;
+}
+.advertise{
+    grid-area: ad;
+}
+.footer{
+    grid-area: foot;
+}
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "head head head head"
+    "nav main main bar"
+    "nav main main ad"
+    "foot foot foot foot"
+    ;
+}
