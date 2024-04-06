@@ -10,6 +10,10 @@ function setBgById(elementId){
     const element = document.getElementById(elementId);
     element.classList.add('bg-orange-800');
 }
+function removeBgById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-800');
+}
 function getRandomAlpha(){
     const alphabets = 'abcdefghijklmnopqrstuvwxyz';
     const alphabetsArray = alphabets.split('');

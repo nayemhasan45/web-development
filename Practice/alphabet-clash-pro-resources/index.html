@@ -76,20 +76,20 @@
                 <button class="btn bg-[#360490] text-white border-none">
                     Life
                     <img src="images/life.svg" alt="">
-                    <span>1</span>
+                    <span id="currentLife">5</span>
                 </button>
                 <button class="btn bg-[#360490] text-white border-none">
                     Score
                     <img src="images/dolar.svg" alt="">
-                    <span>1</span>
+                    <span id="currentScore">0</span>
                 </button>
             </div>
         </section>
         <!-- score section -->
-        <section class="flex items-center justify-center h-screen hidden">
+        <section id="totalScore" class="flex items-center justify-center h-screen hidden">
             <div class="bg-[#FFFFFF33] p-5 rounded space-y-4 text-center text-white">
-                <h1 class="font-bold text-5xl">Score : <span>14</span></h1>
-                <button class="btn">Play Again</button>
+                <h1 class="font-bold text-5xl">Score : <span id="finalScore">0</span></h1>
+                <button onclick="playNow()" class="btn">Play Again</button>
                 <p>Practice will make you Pro</p>
             </div>
         </section>
