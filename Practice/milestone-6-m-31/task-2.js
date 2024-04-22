@@ -1,10 +1,10 @@
 // use map
 const odds = [1,3,5,7,9,11];
 for(const even of odds){
-    console.log(even+1);
+    // console.log(even+1);
 }
 const newAr=odds.map(even=>even+1);
-console.log(newAr);
+// console.log(newAr);
 
 // find divisible by 10
 const divisible = [33,50,79,78,90,101,30];
@@ -16,7 +16,7 @@ for(const byTen of divisible){
         newArr.push(byTen);
     }
 }
-console.log(newArr);
+// console.log(newArr);
 
 // use filter 
 const byTen=divisible.filter(num=>num%10===0);
