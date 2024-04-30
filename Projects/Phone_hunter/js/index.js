@@ -33,11 +33,26 @@ const displayPhones = (phones) => {
         `;
         getDiv.appendChild(div);
     });
+    // stop spinner 
+    toogleSpinner(false);
 }
 
 const searchPhone=()=>{
+    const getDiv = document.getElementById('phones_container');
+    // clear when clicked
+    getDiv.textContent='';
+    toogleSpinner(true);
     const getText = document.getElementById('findPhone').value;
     // loadData(getText);
     console.log(getText);
     loadData(getText);
+}
+
+const toogleSpinner=(isTrue)=>{
+    const getDiv = document.getElementById('toogle');
+    if(isTrue){
+        getDiv.classList.remove('hidden');
+    }else{
+        getDiv.classList.add('hidden');
+    }
 }
