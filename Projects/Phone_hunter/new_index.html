@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phone hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto">
+    <header>
+        <h1 class="text-3xl text-center  font-bold">Find Phone</h1>
+    </header>
+    <main>
+        <!-- search  -->
+        <section class="text-center mt-4 mb-4">
+            <input id="search" type="text" placeholder="Type here"
+                class="input input-bordered input-success w-full max-w-xs" />
+            <button onclick="handleSearch()" class="btn btn-primary">Search</button>
+            <div id="spinner" class="hidden">
+                <span class="loading loading-infinity loading-lg"></span>
+            </div>
+        </section>
+        <!-- search result -->
+        <section id="displaySection" class="container mx-auto grid grid-cols-3 gap-4">
+        </section>
+        <!-- showAll btn -->
+        <div id="showAllBtn" class="text-center hidden mt-4 mb-4">
+            <button onclick="handelShowAll()" class="btn btn-success">Show All</button>
+        </div>
+
+        <!-- modal  -->
+        <div>
+            <!-- You can open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="my_modal_4.showModal()">open modal</button> -->
+            <dialog id="my_modal_4" class="modal">
+                <div id="singleModal" class="modal-box w-11/12 max-w-5xl">
+                    
+                </div>
+            </dialog>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
